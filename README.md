@@ -1,0 +1,1 @@
+faq-sonata-admin-bundle
