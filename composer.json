@@ -1,0 +1,52 @@
+{
+    "name": "tenolo/faq-sonata-admin-bundle",
+    "description": "Implements faq admin functions.",
+    "keywords": [
+        "faq",
+        "admin",
+        "tenolo",
+        "symfony",
+        "sonata",
+        "bundle"
+    ],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "homepage": "http://tenolo.de",
+    "authors": [
+        {
+            "name": "tenolo - Robert Bernis, Johannes Herberhold GbR",
+            "email": "info@tenolo.de",
+            "homepage": "http://tenolo.de"
+        },
+        {
+            "name": "Nikita Loges",
+            "email": "n.loges@tenolo.de"
+        }
+    ],
+    "require": {
+        "php": "~5.6|~7.0",
+
+        "symfony/framework-bundle": "~2.8|~3.0|~4.0",
+        "symfony/http-kernel": "~2.8|~3.0|~4.0",
+        "symfony/config": "~2.8|~3.0|~4.0",
+        "symfony/dependency-injection": "~2.8|~3.0|~4.0",
+
+        "friendsofsymfony/ckeditor-bundle": "~2.1",
+
+        "tenolo/faq-bundle": "~1.0",
+
+        "sonata-project/admin-bundle": "~3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tenolo\\Bundle\\FAQAdminBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,13 @@
+services:
+
+    tenolo_faq_admin.admin.club:
+        class: Tenolo\Bundle\FAQAdminBundle\Admin\CategoryAdmin
+        arguments: [~, Tenolo\Bundle\FAQBundle\Entity\Category, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Kategorie, group: FAQ }
+
+    tenolo_faq_admin.admin.question:
+        class: Tenolo\Bundle\FAQAdminBundle\Admin\QuestionAdmin
+        arguments: [~, Tenolo\Bundle\FAQBundle\Entity\Question, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Fragen, group: FAQ }
